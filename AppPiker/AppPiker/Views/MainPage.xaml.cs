@@ -25,7 +25,8 @@ namespace AppPiker
         private void ButtonMainpageVerificar_Clicked(object sender, EventArgs e)
         {
             int valor = Convert.ToInt32(entry_mainpage_valor.Text);
-            string opcao = (String)piker_maintpage_operacao.SelectedItem;
+            //String opcao = (String)piker_maintpage_operacao.SelectedItem;
+            int opcao = piker_maintpage_operacao.SelectedIndex;
             label_mainpage_resposta.Text = mainViewModel.OpcaoSelecionada(valor, opcao);
         }
     }
