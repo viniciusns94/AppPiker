@@ -19,7 +19,7 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
-        <Button x:Name="button_mainpage_verificar" Text="Verificar" Clicked="button_mainpage_verificar_Clicked"/>
+        <Button x:Name="button_mainpage_verificar" Text="Verificar" Clicked="ButtonMainpageVerificar_Clicked"/>
         <Label x:Name="label_mainpage_resposta" Text="Resposta"/>
     </StackLayout>
 

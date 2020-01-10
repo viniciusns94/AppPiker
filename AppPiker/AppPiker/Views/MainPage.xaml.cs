@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppPiker.ViewsModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,14 +14,19 @@ namespace AppPiker
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        MainViewModel mainViewModel;
+
         public MainPage()
         {
             InitializeComponent();
+            mainViewModel = new MainViewModel();
         }
 
         private void ButtonMainpageVerificar_Clicked(object sender, EventArgs e)
         {
-
+            int valor = Convert.ToInt32(entry_mainpage_valor.Text);
+            string opcao = (String)piker_maintpage_operacao.SelectedItem;
+            label_mainpage_resposta.Text = mainViewModel.OpcaoSelecionada(valor, opcao);
         }
     }
 }
