@@ -17,5 +17,10 @@ namespace AppPiker
         {
             InitializeComponent();
         }
+
+        private void ButtonMainpageVerificar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
